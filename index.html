@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行者天堂 - 你的旅行从这里开始</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #005293;
+            color: white;
+            padding: 10px 0;
+            border-bottom: #ffdd00 3px solid;
+        }
+        header a {
+            color: #ffdd00;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            margin: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        section#showcase {
+            min-height: 400px;
+            background: url('showcase.jpg') no-repeat 0 -100px;
+            text-align: center;
+            color: #ffffff;
+        }
+        section#showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        section#showcase p {
+            font-size: 20px;
+        }
+        section#main {
+            padding: 15px;
+            background: white;
+        }
+        section#main .content-title {
+            background: #005293;
+            color: white;
+            padding: 5px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        section#main article {
+            float: left;
+            width: 60%;
+        }
+        section#main aside {
+            float: right;
+            width: 30%;
+            background: #ffdd00;
+            padding: 10px;
+        }
+        section#main aside p {
+            color: #333;
+        }
+        footer {
+            background: #005293;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 10px 0;
+        }
+        @media(max-width: 768px){
+            header #branding,
+            header nav,
+            header nav li,
+            .container,
+            section#main article,
+            section#main aside {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header {
+                padding-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>旅行者天堂</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">首页</a></li>
+                    <li><a href="destinations.html">目的地</a></li>
+                    <li><a href="offers.html">优惠</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>探索未知的世界</h1>
+            <p>让我们带你去任何你想去的地方。</p>
+            <a href="destinations.html" class="button">更多目的地 &rarr;</a>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="content-title">热门目的地</h1>
+                <p>从繁华的城市到遥远的海滩，我们提供各种旅行套餐。</p>
+                <ul class="destinations">
+                    <li>
+                        <h3>巴黎</h3>
+                        <p>光之城，浪漫之都。</p>
+                    </li>
+                    <li>
+                        <h3>东京</h3>
+                        <p>现代与传统的完美结合。</p>
+                    </li>
+                    <li>
+                        <h3>悉尼</h3>
+                        <p>南半球的明珠，自然与城市的和谐共存。</p>
+                    </li>
+                </ul>
+            </article>
+
+            <aside id="sidebar">
+                <h1 class="content-title">最新优惠</h1>
+                <p>不要错过我们的最新旅行优惠。</p>
+                <a href="offers.html" class="button">查看优惠 &rarr;</a>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <p>版权所有 &copy; 2024 旅行者天堂</p>
+    </footer>
+</body>
+</html>
